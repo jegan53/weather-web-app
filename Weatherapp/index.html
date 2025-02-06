@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter City Name" class="searchinput" onfocus="this.value=''">
+            <button type="submit" class="searchbutton "  ><img src="./image/image.png" alt=""></button>
+        </div>
+        <div class="error">
+            <p>invalid city name</p>
+        </div>
+        <div class="weather">
+            <img src="./image/weather.png" alt="" class="weatherimg">
+            <h1 id="degree">22°c</h1>
+            <h2 id="place">New York</h2>
+            
+            <div class="combine">
+                <div class="humidity">
+                    <img src="./image/humidity.png" alt="">
+                    <p id="hum">50%</p>
+                    <p>Humidity</p>
+                </div>
+                <div class="wind_speed">
+                    <img src="./image/wind.png" alt="">
+                    <p id="ws">15 km/h</p>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+        
+    
+    <script src="./script.js"></script>
+</body>
+</html>
